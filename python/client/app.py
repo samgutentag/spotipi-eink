@@ -82,5 +82,5 @@ def handle_refresh_rate():
     job = manager.RestartUnit('spotipi.service', 'fail')
     return render_template('index.html', brightness = brightness, width = width, height = height, refresh_rate = int(request.form['refresh_rate']), power = power)
 
-app.run(host='0.0.0.0', port=80) 
+app.run(host='0.0.0.0', port=80)
 
